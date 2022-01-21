@@ -9,6 +9,8 @@
   * [Tech Stack](#tech-stack)
   * [File Structure](#file-structure)
 * [Getting Started](#getting-started)
+  * [Installation](#installation) 
+  * [Prerequisites](#prerequisites)
 * [Results and Demo](#results-and-demo)
 * [Future Work](#future-work)
 * [Contributors](#contributors)
