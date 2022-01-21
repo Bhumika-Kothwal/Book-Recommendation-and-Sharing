@@ -73,32 +73,32 @@ Software used for this project :
   * neo4j 
 
 
-1 . Django
+1 . Django  
     Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.
 
-2 . Python3
+2 . Python3  
     Python3 is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
     
-3 . HTML
+3 . HTML  
     HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. 
     
-4 . CSS
+4 . CSS  
     Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup 
     language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. 
 
-5 . JS
+5 . JS  
     JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. 
 
-6 . Postgres
+6 . Postgres  
     PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications. The latest major version is PostgreSQL 12.
-
-7 . Postgis
+ 
+7 . Postgis  
     PostGIS is a spatial database. Oracle Spatial and SQL Server (2008 and later) are also spatial databases. 
     
-8 . Pgadmin
+8 . Pgadmin  
     PgAdmin is a web-based GUI tool used to interact with the Postgres database sessions, both locally and remote servers as well. You can use PGAdmin to perform any sort of database administration required for a Postgres database
 
-9 . Neo4j
+9 . Neo4j  
     Neo4j facilitates personal data storage and management: it allows you to track where private information is stored and which systems, applications, and users access it. The graph data model helps visualize personal data and allows for data analysis and pattern detection
 
 
@@ -305,7 +305,7 @@ See [this](https://github.com/Bhumika-Kothwal/Book-Recommendation-and-Sharing/bl
 * MEMBERS
   1. [Ms. Bhumika Kothwal](https://github.com/Bhumika-Kothwal) : kothwalbhumika@gmail.com
   2. [Ms. Neha Shinde](https://github.com/nbshinde) : nehashinde3399@gmail.com
-  3. [Ms. Nishtha Sainger](https://github.com/Bhumika-Kothwal) : kothwalbhumika@gmail.com
+  3. [Ms. Nishtha Sainger](https://github.com/Nishtha2709) : nish279rs@gmail.com
 
 <!-- ACKNOWLEDGEMENTS AND REFERENCES -->
 ## Acknowledgements and Resources
