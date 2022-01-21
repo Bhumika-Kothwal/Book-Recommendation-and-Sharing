@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Message  </title>
+      <!-- Favicon -->
+      <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <!-- Animate CSS -->
+      <link href="{% static 'assets/vendors/animate/animate.css' %}" rel="stylesheet">
+      <!-- Icon CSS-->
+      <link rel="stylesheet" href="{% static 'assets/vendors/font-awesome/css/font-awesome.min.css' %}">
+      <!-- Camera Slider -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Camera/1.3.4/css/camera.css">
+      <!-- Owlcarousel CSS-->
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/vendors/owl_carousel/owl.carousel.css' %}" media="all">
+      <!--Template Styles CSS-->
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" media="all" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+   </head>
+   <body id="top">
+      <div class="about-bg-banner-img">
+         <div class="overlay-all ">
+            <nav class="header-nav">
+               <div class="header-nav__content">
+                  <h3 style="font-size:1vw">Sha-Fi-Rec-Do </h3>
+                  <ul class="header-nav__list">
+                     <li class=""><a class=""  href="{% url 'index' %}" >Home</a></li>
+                     <li><a class=""  href="{% url 'about' %}" >About</a></li>
+                     {% if user.is_authenticated %}
+                     <li><a>Search</a></li>
+                         <ul class="list-group">
+                             <a href="{% url 'core:search_by_name' %}" style="margin-left: 20px;">1. By Name </a>
+                             <a href="{% url 'core:search_by_genre' %}" style="margin-left: 20px;">2. By Genre</a>
+                             <a href="{% url 'core:search_by_author' %}" style="margin-left: 20px;">3. By Author</a>
+                         </ul>
+
+                     <li><a>Get Recommendation</a></li>
+                         <ul class="list-group">
+                             <a href="{% url 'core:search_by_similarUser' %}" style="margin-left: 20px;">1. Read by Similar User</a>
+                         </ul>
+
+                     <li><a>Book Exchange</a></li>
+                        <ul class="list-group">
+                           <a href="{% url 'book_ex:bookex_form' %}" style="margin-left: 20px;">1. Exchange Your Book</a>
+                           
+                           <a href="{% url 'core:search_by_name' %}" style="margin-left: 20px;">2. Search Book for Exchange</a>
+                        </ul>
+                     <li><a class=""  href="{% url 'donation:nearby' %}">Donate</a></li>
+                     <li><a class=""  href="{% url 'donation:ngo_form' %}">Register NGO </a></li>
+                     
+                     
+                     <li><a class=""  href="{% url 'profile' %}">Profile</a></li>
+                     <li><a class=""  href="{% url 'user_logout' %}">Logout</a></li>
+                     {% else %}
+                        <li><a class=""  href="{% url 'core:user_login' %}">Login </a></li>
+                        <li><a class=""  href="{% url 'core:user_register' %}">Register</a></li>
+                     {% endif %}
+                     
+                  </ul>
+                  
+               </div>
+               <!-- end header-nav__content -->
+            </nav>
+               <!-- end header-nav -->
+               <a class="header-menu-toggle" href="#0">
+               <span class="header-menu-icon"></span>
+               </a>
+            </header>
+            <!-- end s-header -->
+            <!-- End Header_Area -->
+            <!-- #banner start -->
+            <section id="banner" class="py_120">
+               <div class="container ">
+                  <div class="row">
+                     <!-- #banner-text start -->            
+                     <div id="banner-text" class="col-md-7 text-c text-left ">
+                        <h5 class="wow fadeInUp main-h font_30" data-wow-delay="0.2s" >Welcome To Sha-Fi-Rec-Do 
+                           <br><span class="about_text "> {{ message }} </span>  
+                        </h5>
+                        
+                     </div>
+                     <!-- /#banner-text End -->
+                  </div>
+               </div>
+            </section>
+            <!--#Our banner-shap- Area -->
+            <div class="container-fluid p0 banner-shap-img">
+            </div>
+            <!--#EndOur banner-shap- Area -->
+         </div>
+      </div>
+      <!-- /#banner end -->
+      
+      <!-- Add code here -->
+            <!--#start Our footer Area -->
+            <div class="our_footer_area">
+                <div class="book_now_aera ">
+                    <div class="container wow fadeInUp">
+                    <div class="row book_now">
+                        <div class="col-md-4">
+                            <div class="">
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="col-md-1 ">
+                        </div>
+                        <div class="col-md-3">
+                            
+                            
+                        </div>
+                        <div class="col-md-4">
+                            
+                        </div>
+                        <div class="col-md-12">
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+      
+      <!-- /.hero__overlay -->
+      <!-- jQuery JS -->
+      <script src="{% static 'assets/js/jquery-1.12.0.min.js' %}"></script>
+      <script src="{% static 'assets/vendors/popup/lightbox.min.js' %}"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+           e.preventDefault();
+           $(this).siblings('a.active').removeClass("active");
+           $(this).addClass("active");
+           var index = $(this).index();
+           $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+           $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+         });
+         });
+      </script> 
+      
+      <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+                 $(this).toggleClass('active');
+             });
+         });
+      </script>
+      <!-- Bootstrap JS -->
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <!-- Animate JS -->
+      <script src="{% static 'assets/vendors/animate/wow.min.js' %}"></script>
+      <script src="{% static 'assets/vendors/sidebar/main.js' %}"></script>
+      <!-- Owlcarousel JS -->
+      <script src="{% static 'assets/vendors/owl_carousel/owl.carousel.min.js' %}"></script>
+      <!-- Stellar JS-->
+      <!-- Theme JS -->
+      <script src="{% static 'assets/js/theme.min.js' %}"></script>
+      
+   </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b13775c9e83477fa43545aa8f75d669 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2b13775c9e83477fa43545aa8f75d669" ></div>
+        
+</body>
+<script>    
+    
+            var map_2b13775c9e83477fa43545aa8f75d669 = L.map(
+                "map_2b13775c9e83477fa43545aa8f75d669",
+                {
+                    center: [18.9774813, 73.1001814],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdf59672a60c4fc79e1e7ce119189d7f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2b13775c9e83477fa43545aa8f75d669);
+        
+    
+            var marker_ecc9e0dafd804907925bcf970f8ebc7b = L.marker(
+                [18.9774813, 73.1001814],
+                {}
+            ).addTo(map_2b13775c9e83477fa43545aa8f75d669);
+        
+    
+            var icon_6f51d0fc56994521a12ab37b77074bbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ecc9e0dafd804907925bcf970f8ebc7b.setIcon(icon_6f51d0fc56994521a12ab37b77074bbf);
+        
+    
+        var popup_7de07b4e80dd41d0afba7276335f424b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a46b195d5b6344ff853c278c4a53239d = $(`<div id="html_a46b195d5b6344ff853c278c4a53239d" style="width: 100.0%; height: 100.0%;"></div>`)[0];
+            popup_7de07b4e80dd41d0afba7276335f424b.setContent(html_a46b195d5b6344ff853c278c4a53239d);
+        
+
+        marker_ecc9e0dafd804907925bcf970f8ebc7b.bindPopup(popup_7de07b4e80dd41d0afba7276335f424b)
+        ;
+
+        
+    
+    
+            marker_ecc9e0dafd804907925bcf970f8ebc7b.bindTooltip(
+                `<div>
+                     Your Location!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb77b39e69bd4c28859cd006b871facc = L.marker(
+                [18.9774502, 73.1001957],
+                {}
+            ).addTo(map_2b13775c9e83477fa43545aa8f75d669);
+        
+    
+        var popup_e44b182abc0144acabd77049227d4d47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9773aa9204ca491f83bcaa8032a5f585 = $(`<div id="html_9773aa9204ca491f83bcaa8032a5f585" style="width: 100.0%; height: 100.0%;"><a href="https://www.google.com/maps/dir/?api=1&destination=A-403,+Jai+Sambhav+LK+Planet,+Sector+6,+Karanjade">GetDirection</a></div>`)[0];
+            popup_e44b182abc0144acabd77049227d4d47.setContent(html_9773aa9204ca491f83bcaa8032a5f585);
+        
+
+        marker_cb77b39e69bd4c28859cd006b871facc.bindPopup(popup_e44b182abc0144acabd77049227d4d47)
+        ;
+
+        
+    
+    
+            marker_cb77b39e69bd4c28859cd006b871facc.bindTooltip(
+                `<div>
+                     Name:Bhumika Kothwal , Email:kothwalbhumika@gmail.com , Contact:9653394644
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
