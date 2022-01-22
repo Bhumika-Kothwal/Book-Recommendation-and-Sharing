@@ -294,8 +294,6 @@ See [this](https://github.com/Bhumika-Kothwal/Book-Recommendation-and-Sharing/bl
     | <img width="600" height="300" src="https://github.com/Bhumika-Kothwal/Book-Recommendation-and-Sharing/blob/master/Documentation/Results/profile1.png">   |   <img width="600" height="300" src="https://github.com/Bhumika-Kothwal/Book-Recommendation-and-Sharing/blob/master/Documentation/Results/profile2.png">   |  
 <br>
 
-
-
 <!-- FUTURE WORK -->
 ## Future Work
 1. The database of books can be expanded to include several books of different genre
