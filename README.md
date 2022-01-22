@@ -298,7 +298,8 @@ See [this](https://github.com/Bhumika-Kothwal/Book-Recommendation-and-Sharing/bl
 
 <!-- FUTURE WORK -->
 ## Future Work
-
+1. The database of books can be expanded to include several books of different genre
+2. A chat feature can be introduced between two people willing to exchange the book to ease out the communication
 <br>
 
 <!-- CONTRIBUTORS -->
